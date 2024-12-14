@@ -1,0 +1,52 @@
+[1/1439] Generating project_elf_src_esp32c3.c
+[2/1439] Generating /Users/requieeeem/esp/esp-dev-kits/esp32-c3-lcdkit/examples/knob_panel/build/esp-idf/esp_system/ld/sections.ld.in linker script...
+[3/1439] Generating /Users/requieeeem/esp/esp-dev-kits/esp32-c3-lcdkit/examples/knob_panel/build/esp-idf/esp_system/ld/memory.ld linker script...
+[4/1439] cd /Users/requieeeem/esp/esp-dev-kits/esp32-c3-lcdkit/examples/knob_panel/build/esp-idf/main && /Users/requieeeem/.espressif/python_env/idf5.3_py3.9_env/bin/python /Users/requieeeem/esp/esp-idf/components/spiffs/spiffsgen.py 0x64000 /Users/requieeeem/esp/esp-dev-kits/esp32-c3-lcdkit/examples/knob_panel/spiffs /Users/requieeeem/esp/esp-dev-kits/esp32-c3-lcdkit/examples/knob_panel/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len
+FAILED: esp-idf/main/CMakeFiles/spiffs_storage_bin /Users/requieeeem/esp/esp-dev-kits/esp32-c3-lcdkit/examples/knob_panel/build/esp-idf/main/CMakeFiles/spiffs_storage_bin 
+cd /Users/requieeeem/esp/esp-dev-kits/esp32-c3-lcdkit/examples/knob_panel/build/esp-idf/main && /Users/requieeeem/.espressif/python_env/idf5.3_py3.9_env/bin/python /Users/requieeeem/esp/esp-idf/components/spiffs/spiffsgen.py 0x64000 /Users/requieeeem/esp/esp-dev-kits/esp32-c3-lcdkit/examples/knob_panel/spiffs /Users/requieeeem/esp/esp-dev-kits/esp32-c3-lcdkit/examples/knob_panel/build/storage.bin --page-size=256 --obj-name-len=32 --meta-len=4 --use-magic --use-magic-len
+Traceback (most recent call last):
+  File "/Users/requieeeem/esp/esp-idf/components/spiffs/spiffsgen.py", line 431, in create_file
+    block.update_obj(contents_chunk)
+  File "/Users/requieeeem/esp/esp-idf/components/spiffs/spiffsgen.py", line 346, in update_obj
+    raise SpiffsFullError()
+__main__.SpiffsFullError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/requieeeem/esp/esp-idf/components/spiffs/spiffsgen.py", line 435, in create_file
+    raise SpiffsFullError
+__main__.SpiffsFullError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/requieeeem/esp/esp-idf/components/spiffs/spiffsgen.py", line 590, in <module>
+    main()
+  File "/Users/requieeeem/esp/esp-idf/components/spiffs/spiffsgen.py", line 582, in main
+    spiffs.create_file('/' + os.path.relpath(full_path, args.base_dir).replace('\\', '/'), full_path)
+  File "/Users/requieeeem/esp/esp-idf/components/spiffs/spiffsgen.py", line 446, in create_file
+    block = self._create_block()
+  File "/Users/requieeeem/esp/esp-idf/components/spiffs/spiffsgen.py", line 395, in _create_block
+    raise SpiffsFullError('the image size has been exceeded')
+__main__.SpiffsFullError: the image size has been exceeded
+[5/1439] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_ws.c.obj
+[6/1439] Generating ../../partition_table/partition-table.bin
+Partition table binary generated. Contents:
+*******************************************************************************
+# ESP-IDF Partition Table
+# Name, Type, SubType, Offset, Size, Flags
+nvs,data,nvs,0x9000,24K,
+phy_init,data,phy,0xf000,4K,
+fctry,data,nvs,0x10000,24K,
+factory,app,factory,0x20000,3400K,
+storage,data,spiffs,0x372000,400K,
+*******************************************************************************
+[7/1439] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/util/ctrl_sock.c.obj
+[8/1439] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_uri.c.obj
+[9/1439] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_txrx.c.obj
+[10/1439] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_sess.c.obj
+[11/1439] Building C object esp-idf/esp_https_ota/CMakeFiles/__idf_esp_https_ota.dir/src/esp_https_ota.c.obj
+[12/1439] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_main.c.obj
+[13/1439] Building C object esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/httpd_parse.c.obj
+ninja: build stopped: subcommand failed.

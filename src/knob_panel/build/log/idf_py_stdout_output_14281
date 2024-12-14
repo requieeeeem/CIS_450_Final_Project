@@ -1,0 +1,381 @@
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x403d04f6
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1990
+load:0x403cc710,len:0xd98
+load:0x403ce710,len:0x304c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Dec 13 2024 19:12:51[0m
+[0;32mI (25) boot: chip revision: v0.4[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (32) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (37) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (42) boot.esp32c3: SPI Mode       : QIO[0m
+[0;32mI (47) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (57) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (68) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (83) boot:  2 fctry            WiFi data        01 02 00010000 00006000[0m
+[0;32mI (90) boot:  3 factory          factory app      00 00 00020000 00352000[0m
+[0;32mI (97) boot:  4 storage          Unknown data     01 82 00372000 00064000[0m
+[0;32mI (105) boot: End of partition table[0m
+[0;32mI (109) esp_image: segment 0: paddr=00020020 vaddr=3c070020 size=273f10h (2572048) map[0m
+[0;32mI (479) esp_image: segment 1: paddr=00293f38 vaddr=3fc8ea00 size=01ec4h (  7876) load[0m
+[0;32mI (481) esp_image: segment 2: paddr=00295e04 vaddr=40380000 size=0a214h ( 41492) load[0m
+[0;32mI (492) esp_image: segment 3: paddr=002a0020 vaddr=42000020 size=6b76ch (440172) map[0m
+[0;32mI (555) esp_image: segment 4: paddr=0030b794 vaddr=4038a214 size=045e0h ( 17888) load[0m
+[0;32mI (558) esp_image: segment 5: paddr=0030fd7c vaddr=50000200 size=00004h (     4) load[0m
+[0;32mI (565) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (567) boot: Disabling RNG early entropy source...[0m
+[0;32mI (584) cpu_start: Unicore app[0m
+[0;32mI (592) cpu_start: Pro cpu start user code[0m
+[0;32mI (592) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (592) app_init: Application information:[0m
+[0;32mI (595) app_init: Project name:     c3_knob_panel[0m
+[0;32mI (601) app_init: App version:      72ebc53-dirty[0m
+[0;32mI (606) app_init: Compile time:     Dec 13 2024 19:18:34[0m
+[0;32mI (612) app_init: ELF file SHA256:  cdfdb1a3a...[0m
+[0;32mI (617) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (622) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (627) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (632) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (637) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (644) heap_init: At 3FC9A230 len 00025DD0 (151 KiB): RAM[0m
+[0;32mI (650) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (657) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (664) heap_init: At 50000204 len 00001DE4 (7 KiB): RTCRAM[0m
+[0;32mI (671) spi_flash: detected chip: generic[0m
+[0;32mI (675) spi_flash: flash io: qio[0m
+[0;32mI (679) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (685) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (693) main_task: Started on CPU0[0m
+[0;32mI (697) main_task: Calling app_main()[0m
+[0;32mI (701) main: Compile time: Dec 13 2024 19:18:45[0m
+[0;32mI (710) LVGL: Starting LVGL task[0m
+[0;32mI (711) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (719) gc9a01: LCD panel create success, version: 1.2.0[0m
+[0;32mI (848) gpio: GPIO[10]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (849) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (856) Knob: Iot Knob Config Succeed, encoder A:10, encoder B:6, direction:0, Version: 0.1.5[0m
+[0;32mI (865) button: IoT Button Version: 3.4.0[0m
+[0;32mI (870) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (879) main: Display LVGL demo[0m
+[0;32mI (883) LVGL_PUB: add group for encoder[0m
+[0;32mI (888) lvgl_basic: Enter home page[0m
+[0;32mI (896) lvgl_basic: Init clock time ok, 0x3fc92d6c[0m
+[0;32mI (1400) ESP32-C3-LCDKit: BLINK_GPIO setting 8[0m
+[0;32mI (1400) gpio: GPIO[8]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1413) ESP32-C3-LCDKit: Partition size: total: 369221, used: 71284[0m
+[0;32mI (1414) main_task: Returned from app_main()[0m
+[0;32mI (9640) main_menu: Invalid Enter factory[0m
+[0;32mI (10291) app_audio: play: /spiffs/50_percent.mp3[0m
+[0;32mI (10291) app_audio: PLAYING[0m
+[0;32mI (10296) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (10297) Adev_Codec: Open codec device OK[0m
+[0;32mI (10301) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (10320) app_audio: NEXT[0m
+[0;31mE (10325) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (10326) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (10330) Adev_Codec: Open codec device OK[0m
+[0;32mI (11874) app_audio: play: /spiffs/75_percent.mp3[0m
+[0;32mI (11874) app_audio: play: /spiffs/50_percent.mp3[0m
+[0;32mI (11875) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (11878) app_audio: NEXT[0m
+[0;32mI (11883) app_audio: NEXT[0m
+[0;32mI (11886) app_audio: NEXT[0m
+[0;31mE (11901) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (11904) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (11907) Adev_Codec: Open codec device OK[0m
+[0;32mI (13813) app_audio: play: /spiffs/100_percent.mp3[0m
+[0;32mI (13814) app_audio: play: /spiffs/75_percent.mp3[0m
+[0;32mI (13814) app_audio: play: /spiffs/50_percent.mp3[0m
+[0;32mI (13819) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (13833) app_audio: NEXT[0m
+[0;32mI (13833) app_audio: NEXT[0m
+[0;32mI (13834) app_audio: NEXT[0m
+[0;32mI (13834) app_audio: NEXT[0m
+[0;31mE (13842) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (13846) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (13852) Adev_Codec: Open codec device OK[0m
+[0;32mI (15953) app_audio: IDLE[0m
+[0;32mI (15989) app_audio: play: /spiffs/75_percent.mp3[0m
+[0;32mI (15989) app_audio: PLAYING[0m
+[0;31mE (15994) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (15995) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (16002) Adev_Codec: Open codec device OK[0m
+[0;32mI (16007) app_audio: play: /spiffs/50_percent.mp3[0m
+[0;32mI (16012) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (16025) app_audio: NEXT[0m
+[0;32mI (16026) app_audio: NEXT[0m
+[0;31mE (16031) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (16032) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (16039) Adev_Codec: Open codec device OK[0m
+[0;32mI (16276) app_audio: play: /spiffs/50_percent.mp3[0m
+[0;32mI (16276) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (16283) app_audio: NEXT[0m
+[0;32mI (16284) app_audio: NEXT[0m
+[0;31mE (16289) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (16291) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (16298) Adev_Codec: Open codec device OK[0m
+[0;32mI (17369) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (17385) app_audio: NEXT[0m
+[0;31mE (17390) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (17391) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (17395) Adev_Codec: Open codec device OK[0m
+[0;32mI (17625) app_audio: play: /spiffs/0_percent.mp3[0m
+[0;32mI (17639) app_audio: NEXT[0m
+[0;31mE (17644) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (17645) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (17648) Adev_Codec: Open codec device OK[0m
+[0;32mI (19464) app_audio: IDLE[0m
+[0;32mI (20314) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (20314) app_audio: PLAYING[0m
+[0;31mE (20319) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (20320) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (20327) Adev_Codec: Open codec device OK[0m
+[0;32mI (21626) app_audio: play: /spiffs/50_percent.mp3[0m
+[0;32mI (21626) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (21636) app_audio: NEXT[0m
+[0;32mI (21636) app_audio: NEXT[0m
+[0;31mE (21641) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (21642) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (21648) Adev_Codec: Open codec device OK[0m
+[0;32mI (23749) app_audio: IDLE[0m
+[0;32mI (24054) app_audio: play: /spiffs/75_percent.mp3[0m
+[0;32mI (24054) app_audio: PLAYING[0m
+[0;31mE (24059) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (24060) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (24067) Adev_Codec: Open codec device OK[0m
+[0;32mI (24072) app_audio: play: /spiffs/50_percent.mp3[0m
+[0;32mI (24077) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (24090) app_audio: NEXT[0m
+[0;32mI (24091) app_audio: NEXT[0m
+[0;31mE (24096) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (24097) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (24104) Adev_Codec: Open codec device OK[0m
+[0;32mI (24804) app_audio: play: /spiffs/75_percent.mp3[0m
+[0;32mI (24804) app_audio: play: /spiffs/50_percent.mp3[0m
+[0;32mI (24805) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (24814) app_audio: NEXT[0m
+[0;32mI (24814) app_audio: NEXT[0m
+[0;32mI (24816) app_audio: NEXT[0m
+[0;31mE (24824) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (24828) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (24834) Adev_Codec: Open codec device OK[0m
+[0;32mI (26935) app_audio: IDLE[0m
+[0;32mI (27631) settings: Saving settings[0m
+ESP-ROM:esp32c3-api1-20210207
+Build:Feb  7 2021
+rst:0xc (RTC_SW_CPU_RST),boot:0xd (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40380798
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fcd5820,len:0x1990
+load:0x403cc710,len:0xd98
+load:0x403ce710,len:0x304c
+entry 0x403cc71a
+[0;32mI (24) boot: ESP-IDF v5.3.2 2nd stage bootloader[0m
+[0;32mI (24) boot: compile time Dec 13 2024 19:12:51[0m
+[0;32mI (24) boot: chip revision: v0.4[0m
+[0;32mI (27) boot: efuse block revision: v1.3[0m
+[0;32mI (31) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (37) boot.esp32c3: SPI Speed      : 80MHz[0m
+[0;32mI (41) boot.esp32c3: SPI Mode       : QIO[0m
+[0;32mI (46) boot.esp32c3: SPI Flash Size : 4MB[0m
+[0;32mI (51) boot: Enabling RNG early entropy source...[0m
+[0;32mI (56) boot: Partition Table:[0m
+[0;32mI (60) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (67) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (75) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (82) boot:  2 fctry            WiFi data        01 02 00010000 00006000[0m
+[0;32mI (90) boot:  3 factory          factory app      00 00 00020000 00352000[0m
+[0;32mI (97) boot:  4 storage          Unknown data     01 82 00372000 00064000[0m
+[0;32mI (104) boot: End of partition table[0m
+[0;32mI (109) esp_image: segment 0: paddr=00020020 vaddr=3c070020 size=273f10h (2572048) map[0m
+[0;32mI (479) esp_image: segment 1: paddr=00293f38 vaddr=3fc8ea00 size=01ec4h (  7876) load[0m
+[0;32mI (480) esp_image: segment 2: paddr=00295e04 vaddr=40380000 size=0a214h ( 41492) load[0m
+[0;32mI (491) esp_image: segment 3: paddr=002a0020 vaddr=42000020 size=6b76ch (440172) map[0m
+[0;32mI (555) esp_image: segment 4: paddr=0030b794 vaddr=4038a214 size=045e0h ( 17888) load[0m
+[0;32mI (558) esp_image: segment 5: paddr=0030fd7c vaddr=50000200 size=00004h (     4) load[0m
+[0;32mI (565) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (566) boot: Disabling RNG early entropy source...[0m
+[0;32mI (583) cpu_start: Unicore app[0m
+[0;32mI (592) cpu_start: Pro cpu start user code[0m
+[0;32mI (592) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (592) app_init: Application information:[0m
+[0;32mI (595) app_init: Project name:     c3_knob_panel[0m
+[0;32mI (600) app_init: App version:      72ebc53-dirty[0m
+[0;32mI (605) app_init: Compile time:     Dec 13 2024 19:18:34[0m
+[0;32mI (611) app_init: ELF file SHA256:  cdfdb1a3a...[0m
+[0;32mI (617) app_init: ESP-IDF:          v5.3.2[0m
+[0;32mI (621) efuse_init: Min chip rev:     v0.3[0m
+[0;32mI (626) efuse_init: Max chip rev:     v1.99 [0m
+[0;32mI (631) efuse_init: Chip rev:         v0.4[0m
+[0;32mI (636) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (643) heap_init: At 3FC9A230 len 00025DD0 (151 KiB): RAM[0m
+[0;32mI (649) heap_init: At 3FCC0000 len 0001C710 (113 KiB): Retention RAM[0m
+[0;32mI (656) heap_init: At 3FCDC710 len 00002950 (10 KiB): Retention RAM[0m
+[0;32mI (663) heap_init: At 50000204 len 00001DE4 (7 KiB): RTCRAM[0m
+[0;32mI (670) spi_flash: detected chip: generic[0m
+[0;32mI (674) spi_flash: flash io: qio[0m
+[0;32mI (679) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (685) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (692) main_task: Started on CPU0[0m
+[0;32mI (696) main_task: Calling app_main()[0m
+[0;32mI (700) main: Compile time: Dec 13 2024 19:18:45[0m
+[0;32mI (709) LVGL: Starting LVGL task[0m
+[0;32mI (710) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (718) gc9a01: LCD panel create success, version: 1.2.0[0m
+[0;32mI (847) gpio: GPIO[10]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (848) gpio: GPIO[6]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (855) Knob: Iot Knob Config Succeed, encoder A:10, encoder B:6, direction:0, Version: 0.1.5[0m
+[0;32mI (864) button: IoT Button Version: 3.4.0[0m
+[0;32mI (869) gpio: GPIO[9]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (878) main: Display LVGL demo[0m
+[0;32mI (882) LVGL_PUB: add group for encoder[0m
+[0;32mI (887) lvgl_basic: Enter home page[0m
+[0;32mI (895) lvgl_basic: Init clock time ok, 0x3fc92d6c[0m
+[0;32mI (1399) ESP32-C3-LCDKit: BLINK_GPIO setting 8[0m
+[0;32mI (1399) gpio: GPIO[8]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (1412) ESP32-C3-LCDKit: Partition size: total: 369221, used: 71284[0m
+[0;32mI (1413) main_task: Returned from app_main()[0m
+[0;32mI (4014) settings: Saving settings[0m
+[0;32mI (4990) settings: Saving settings[0m
+[0;32mI (29907) WAKEUP: code:14[0m
+[0;32mI (45371) WAKEUP: code:7[0m
+[0;32mI (46497) main_menu: Invalid Enter factory[0m
+[0;32mI (47238) app_audio: play: /spiffs/50_percent.mp3[0m
+[0;32mI (47238) app_audio: PLAYING[0m
+[0;32mI (47243) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (47244) Adev_Codec: Open codec device OK[0m
+[0;32mI (47248) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (47267) app_audio: NEXT[0m
+[0;31mE (47273) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (47273) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (47277) Adev_Codec: Open codec device OK[0m
+[0;32mI (49378) app_audio: IDLE[0m
+[0;32mI (59284) app_audio: play: /spiffs/75_percent.mp3[0m
+[0;32mI (59284) app_audio: PLAYING[0m
+[0;31mE (59289) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (59290) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (59297) Adev_Codec: Open codec device OK[0m
+[0;32mI (59302) app_audio: play: /spiffs/50_percent.mp3[0m
+[0;32mI (59307) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (59320) app_audio: NEXT[0m
+[0;32mI (59321) app_audio: NEXT[0m
+[0;31mE (59326) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (59327) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (59334) Adev_Codec: Open codec device OK[0m
+[0;32mI (61435) app_audio: IDLE[0m
+[0;32mI (63426) app_audio: play: /spiffs/50_percent.mp3[0m
+[0;32mI (63426) app_audio: PLAYING[0m
+[0;31mE (63431) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (63433) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (63439) Adev_Codec: Open codec device OK[0m
+[0;32mI (63444) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (63462) app_audio: NEXT[0m
+[0;31mE (63467) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (63468) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (63472) Adev_Codec: Open codec device OK[0m
+[0;32mI (64074) app_audio: play: /spiffs/50_percent.mp3[0m
+[0;32mI (64075) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (64094) app_audio: NEXT[0m
+[0;32mI (64094) app_audio: NEXT[0m
+[0;31mE (64099) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (64100) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (64105) Adev_Codec: Open codec device OK[0m
+[0;32mI (65306) app_audio: play: /spiffs/50_percent.mp3[0m
+[0;32mI (65307) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (65321) app_audio: NEXT[0m
+[0;32mI (65322) app_audio: NEXT[0m
+[0;31mE (65327) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (65327) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (65332) Adev_Codec: Open codec device OK[0m
+[0;32mI (66966) app_audio: play: /spiffs/50_percent.mp3[0m
+[0;32mI (66966) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (66973) app_audio: NEXT[0m
+[0;32mI (66973) app_audio: NEXT[0m
+[0;31mE (66978) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (66981) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (66988) Adev_Codec: Open codec device OK[0m
+[0;32mI (68923) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (68937) app_audio: NEXT[0m
+[0;31mE (68942) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (68942) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (68946) Adev_Codec: Open codec device OK[0m
+[0;32mI (70500) app_audio: play: /spiffs/0_percent.mp3[0m
+[0;32mI (70518) app_audio: NEXT[0m
+[0;31mE (70523) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (70523) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (70527) Adev_Codec: Open codec device OK[0m
+[0;32mI (72343) app_audio: IDLE[0m
+[0;32mI (76642) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (76642) app_audio: PLAYING[0m
+[0;31mE (76647) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (76649) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (76655) Adev_Codec: Open codec device OK[0m
+[0;32mI (78756) app_audio: IDLE[0m
+[0;32mI (81241) app_audio: play: /spiffs/50_percent.mp3[0m
+[0;32mI (81241) app_audio: PLAYING[0m
+[0;31mE (81246) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (81248) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (81254) Adev_Codec: Open codec device OK[0m
+[0;32mI (81259) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (81277) app_audio: NEXT[0m
+[0;31mE (81282) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (81283) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (81287) Adev_Codec: Open codec device OK[0m
+[0;32mI (83388) app_audio: IDLE[0m
+[0;32mI (86843) app_audio: play: /spiffs/75_percent.mp3[0m
+[0;32mI (86843) app_audio: PLAYING[0m
+[0;31mE (86848) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (86850) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (86856) Adev_Codec: Open codec device OK[0m
+[0;32mI (86861) app_audio: play: /spiffs/50_percent.mp3[0m
+[0;32mI (86866) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (86879) app_audio: NEXT[0m
+[0;32mI (86880) app_audio: NEXT[0m
+[0;31mE (86885) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (86886) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (86893) Adev_Codec: Open codec device OK[0m
+[0;32mI (88994) app_audio: IDLE[0m
+[0;32mI (91445) app_audio: play: /spiffs/75_percent.mp3[0m
+[0;32mI (91445) app_audio: PLAYING[0m
+[0;31mE (91450) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (91452) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (91458) Adev_Codec: Open codec device OK[0m
+[0;32mI (91463) app_audio: play: /spiffs/50_percent.mp3[0m
+[0;32mI (91468) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (91481) app_audio: NEXT[0m
+[0;32mI (91482) app_audio: NEXT[0m
+[0;31mE (91487) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (91489) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (91495) Adev_Codec: Open codec device OK[0m
+[0;32mI (93571) app_audio: play: /spiffs/75_percent.mp3[0m
+[0;32mI (93571) app_audio: play: /spiffs/50_percent.mp3[0m
+[0;32mI (93572) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (93578) app_audio: NEXT[0m
+[0;32mI (93580) app_audio: NEXT[0m
+[0;32mI (93583) app_audio: NEXT[0m
+[0;31mE (93591) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (93595) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (93601) Adev_Codec: Open codec device OK[0m
+[0;32mI (94100) app_audio: play: /spiffs/100_percent.mp3[0m
+[0;32mI (94101) app_audio: play: /spiffs/75_percent.mp3[0m
+[0;32mI (94101) app_audio: play: /spiffs/50_percent.mp3[0m
+[0;32mI (94106) app_audio: play: /spiffs/25_percent.mp3[0m
+[0;32mI (94113) app_audio: NEXT[0m
+[0;32mI (94115) app_audio: NEXT[0m
+[0;32mI (94118) app_audio: NEXT[0m
+[0;32mI (94121) app_audio: NEXT[0m
+[0;31mE (94129) i2s_common: i2s_channel_disable(1112): the channel has not been enabled yet[0m
+[0;32mI (94133) I2S_IF: channel mode 1 bits:16/16 channel:2 mask:3[0m
+[0;32mI (94139) Adev_Codec: Open codec device OK[0m
+[0;32mI (96241) app_audio: IDLE[0m
+[0;32mI (119972) WAKEUP: code:14[0m

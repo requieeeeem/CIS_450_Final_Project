@@ -1,0 +1,31 @@
+[0;33m--- esp-idf-monitor 1.5.0 on /dev/cu.usbmodem101 115200[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H[0m
+[0;33m--- 0x4205f676: _svfprintf_r at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:654
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x4205f67a: _svfprintf_r at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:654
+0x4205eb16: sprintf at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/stdio/sprintf.c:620
+[0m
+[0;33m--- 0x40380001: _vector_table at /Users/requieeeem/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x40380798: esp_restart_noos at /Users/requieeeem/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c:110
+[0m
+[0;33m--- 0x4205f676: _svfprintf_r at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:654
+[0m
+[0;33m--- Stack dump detected[0m
+[0;33m--- 0x4205f67a: _svfprintf_r at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/stdio/svfprintf.c:654
+0x4205eb16: sprintf at /Users/brnomac003/.gitlab-runner/builds/qR2TxTby/1/idf/crosstool-NG/.build/riscv32-esp-elf/src/newlib/newlib/libc/stdio/sprintf.c:620
+[0m
+[0;33m--- 0x40380001: _vector_table at /Users/requieeeem/esp/esp-idf/components/riscv/vectors_intc.S:54
+[0m
+[0;33m
+--- Backtrace:
+
+[0m
+[0;33m--- 0x40380798: esp_restart_noos at /Users/requieeeem/esp/esp-idf/components/esp_system/port/soc/esp32c3/system_internal.c:110
+[0m
+[0m
